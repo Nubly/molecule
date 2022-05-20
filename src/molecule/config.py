@@ -350,6 +350,7 @@ class Config(object, metaclass=NewInitCaller):
                 "enabled": True,
                 "options": {},
                 "env": {},
+                "install_local": True,
             },
             "driver": {
                 "name": "delegated",

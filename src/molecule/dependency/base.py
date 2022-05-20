@@ -124,6 +124,15 @@ class Base(object):
         return self._config.config["dependency"]["enabled"]
 
     @property
+    def install_local(self) -> bool:
+        """
+        Whether to install the dependency locally and returns a bool.
+
+        :returns: bool
+        """
+        return self._config.config["dependency"]["install_local"]
+
+    @property
     def options(self):
         return util.merge_dicts(
             self.default_options, self._config.config["dependency"]["options"]

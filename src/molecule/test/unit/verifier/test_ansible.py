@@ -55,6 +55,10 @@ def test_enabled_property(_instance):
     assert _instance.enabled
 
 
+def test_install_local_property(_instance):
+    assert _instance.install_local
+
+
 def test_directory_property(_instance):
     parts = _instance.directory.split(os.path.sep)
     # Unused by Ansible verifier

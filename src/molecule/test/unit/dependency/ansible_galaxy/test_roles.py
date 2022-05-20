@@ -92,6 +92,10 @@ def test_enabled_property(_instance):
     assert _instance.enabled
 
 
+def test_install_local_property(_instance):
+    assert _instance.install_local
+
+
 @pytest.mark.parametrize("config_instance", ["_dependency_section_data"], indirect=True)
 def test_options_property(_instance, role_file, roles_path):
     x = {
